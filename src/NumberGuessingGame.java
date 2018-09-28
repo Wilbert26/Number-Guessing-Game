@@ -2,90 +2,117 @@ import java.util.Scanner;
 
 public class NumberGuessingGame {
 
-  public static void main(String[]args){
-      Scanner keyboard;
-     int testing;
-      int pickednumber;
-      String guess;
+    public static void main(String[]args){
+        Scanner keyboard;
+        int testing;
+        int pickednumber;
+        String guess;
 
-      keyboard=new Scanner(System.in);
+        keyboard=new Scanner(System.in);
 
 
-      pickednumber=(int)(Math.random()*100);
-      System.out.println(pickednumber);
+        pickednumber=(int)(Math.random()*100);
+        System.out.println(pickednumber);
 
-      System.out.println(" pick a number from 1-100");
-      testing=keyboard.nextInt();
-      if (testing<pickednumber) {
-          System.out.println("too low");
-      }
+        System.out.println(" pick a number from 1-100");
+        testing=keyboard.nextInt();
 
-else if (testing>pickednumber){
- System.out.println("too high");
-      }
+        if(testing!=pickednumber) {
 
-       if (testing==pickednumber){
-          System.out.println("YOU WIN");
-       }
+            if (testing < pickednumber) {
+                System.out.println("too low 1");
+            }
 
-         System.out.println("try a different number");
-      testing=keyboard.nextInt();
+            else  {
+                System.out.println("too high 1");
+            }
 
-      if (testing<pickednumber) {
-          System.out.println("too low");
-      }
+            System.out.println("try a different number v2");
+            testing=keyboard.nextInt();
 
-      else if (testing>pickednumber){
-          System.out.println("too high");
-      }
+            if(testing!=pickednumber) {
 
-      if (testing==pickednumber){
-          System.out.println("YOU WIN");
-      }
+                if (testing < pickednumber) {
+                    System.out.println("too low 2");
+                }
 
+                else  {
+                    System.out.println("too high 2");
+                }
 
+                System.out.println("try a different number v3");
+                testing=keyboard.nextInt();
 
+                if(testing!=pickednumber) {
 
+                    if (testing < pickednumber) {
+                        System.out.println("too low 3");
+                    }
 
+                    else  {
+                        System.out.println("too high 3");
+                    }
 
-      System.out.println("last try");
-      testing=keyboard.nextInt();
+                    System.out.println("You lose");
+                    //testing=keyboard.nextInt();
 
-      if (testing<pickednumber) {
-          System.out.println("too low");
-      }
 
-      else if (testing>pickednumber){
-          System.out.println("too high");
-      }
+                }
 
-      if (testing==pickednumber){
-          System.out.println("YOU WIN");
-      }
+                else {
+                    System.out.println("YOU WIN");
+                }
 
+            }
 
+            else {
+                System.out.println("YOU WIN 2");
+            }
 
+        }
 
 
+        else {
+            System.out.println("YOU WIN 1");
+        }
 
 
 
-      System.out.println("The number was... ");
-      System.out.println(pickednumber);
+        System.out.println("the number the is ....");
 
 
 
+       /* if (testing<pickednumber) {
+            System.out.println("too low");
+        }
 
+        else if (testing>pickednumber){
+            System.out.println("too high");
+        }
 
+        if (testing==pickednumber){
+            System.out.println("YOU WIN");
+        }
 
 
 
 
 
 
+        System.out.println("last try");
+        testing=keyboard.nextInt();
 
+        if (testing<pickednumber) {
+            System.out.println("too low");
+        }
 
+        else if (testing>pickednumber){
+            System.out.println("too high");
+        }
 
+        if (testing==pickednumber){
+            System.out.println("YOU WIN");
+        }
 
 
 
@@ -94,8 +121,11 @@ else if (testing>pickednumber){
 
 
 
+        System.out.println("The number was... ");
+        System.out.println(pickednumber);
 
 
+*/
 
 
 
@@ -119,7 +149,28 @@ else if (testing>pickednumber){
 
 
 
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 
 
 
