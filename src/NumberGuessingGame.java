@@ -12,7 +12,7 @@ public class NumberGuessingGame {
 
 
         pickednumber=(int)(Math.random()*100);
-        System.out.println(pickednumber);
+        
 
         System.out.println(" pick a number from 1-100");
         testing=keyboard.nextInt();
@@ -20,37 +20,37 @@ public class NumberGuessingGame {
         if(testing!=pickednumber) {
 
             if (testing < pickednumber) {
-                System.out.println("too low 1");
+                System.out.println("too low ");
             }
 
             else  {
-                System.out.println("too high 1");
+                System.out.println("too high ");
             }
 
-            System.out.println("try a different number v2");
+            System.out.println("try a different number ");
             testing=keyboard.nextInt();
 
             if(testing!=pickednumber) {
 
                 if (testing < pickednumber) {
-                    System.out.println("too low 2");
+                    System.out.println("too low ");
                 }
 
                 else  {
-                    System.out.println("too high 2");
+                    System.out.println("too high ");
                 }
 
-                System.out.println("try a different number v3");
+                System.out.println("try a different number ");
                 testing=keyboard.nextInt();
 
                 if(testing!=pickednumber) {
 
                     if (testing < pickednumber) {
-                        System.out.println("too low 3");
+                        System.out.println("too low ");
                     }
 
                     else  {
-                        System.out.println("too high 3");
+                        System.out.println("too high ");
                     }
 
                     System.out.println("You lose");
@@ -66,20 +66,20 @@ public class NumberGuessingGame {
             }
 
             else {
-                System.out.println("YOU WIN 2");
+                System.out.println("YOU WIN ");
             }
 
         }
 
 
         else {
-            System.out.println("YOU WIN 1");
+            System.out.println("YOU WIN ");
         }
 
 
 
         System.out.println("the number the is ....");
-
+        System.out.println(pickednumber);
 
 
        /* if (testing<pickednumber) {
