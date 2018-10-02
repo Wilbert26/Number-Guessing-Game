@@ -12,7 +12,7 @@ public class NumberGuessingGame {
 
 
         pickednumber=(int)(Math.random()*100);
-        
+
 
         System.out.println(" pick a number from 1-100");
         testing=keyboard.nextInt();
